@@ -1,0 +1,23 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: deploy-eks-template
+  title: Deploy an EKS Instance to AWS
+  description: Scaffold and deploy an EKS instance to AWS using Terraform.
+spec:
+  owner: devops-team
+  type: service
+  parameters:
+    - title: EKS configuration
+      required:
+        - name
+      properties:
+        name:
+          type: string
+
+  steps:
+    - id: log-message
+      name: Log Message
+      action: debug:log
+      input:
+        message: 'Hello, ${{ parameters.name }}!'
