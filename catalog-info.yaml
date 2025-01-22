@@ -1,0 +1,8 @@
+catalog:
+  locations:
+    - type: url
+      target: https://github.com/jmguru/hackathon25/blob/main/templates/aws-eks/template.yaml
+      rules:
+        - allow: [Template]
+    - type: file
+      target: template.yaml # Backstage will expect the file to be in packages/backend/template.yaml
