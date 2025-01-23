@@ -1,8 +1,12 @@
-catalog:
-  locations:
-    - type: url
-      target: https://github.com/jmguru/hackathon25/blob/main/templates/aws-eks/template.yaml
-      rules:
-        - allow: [Template]
-    - type: file
-      target: template.yaml # Backstage will expect the file to be in packages/backend/template.yaml
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: DeployEKS
+  description: Deploy EKS Instance to AWS
+  # Example for optional annotations
+  # annotations:
+  #   github.com/project-slug: backstage/backstage
+  #   backstage.io/techdocs-ref: dir:.
+spec:
+  type: website
+  owner: griffitj@us.ibm.com
