@@ -10,3 +10,4 @@ metadata:
 spec:
   type: website
   owner: griffitj@us.ibm.com
+  lifecycle: experimental
