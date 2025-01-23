@@ -8,6 +8,6 @@ metadata:
   #   github.com/project-slug: backstage/backstage
   #   backstage.io/techdocs-ref: dir:.
 spec:
-  type: website
+  type: library
   owner: griffitj@us.ibm.com
   lifecycle: experimental
